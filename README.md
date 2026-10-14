@@ -614,7 +614,7 @@ For a hackathon demonstration:
 
 ---
 
-# Team
+# Team Jupyter
 
 Built for **HackFest@MLH**.
 
