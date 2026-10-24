@@ -1,19 +1,49 @@
+# Python
 __pycache__/
+**/__pycache__/
 *.py[cod]
+*$py.class
+
+# Virtual Environments
 .venv/
+backend/.venv/
+**/venv/
+**/.venv/
+env/
 venv/
+ENV/
+
+# Environment Variables & Secrets
 .env
+backend/.env
+*.env
+!.env.example
+.env.local
+.env.*.local
+
+# IDE & Editors
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Testing & Coverage
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Logs & Temporary files
 *.log
 .DS_Store
 Thumbs.db
+
+# Frontend / Build
 node_modules/
 dist/
 build/
 *.egg-info/
+
+# Local Model Weights & Caches
 models/
 *.gguf
+*.bin

@@ -3,6 +3,8 @@ uvicorn[standard]
 python-multipart
 pydantic
 pydantic-settings
+google-genai>=2.0.0
+python-dotenv
 httpx
 pyyaml
 pytest
