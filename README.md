@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Expert to Skill
 
 > **Transform practical knowledge, instructions, and documented procedures into structured, reusable `SKILL.md` files using Google's hosted Gemma 4 model.**
@@ -144,3 +145,6 @@ The included validation evaluation is an **automated structural heuristic** desi
 - **Current Maintainer:** aadil ([@dface1221](https://github.com/dface1221))
 - **Original Foundation:** Inherited and migrated from the Apprentice project originally built by **Team Jupyter** (Gagan Deep U N, Dhanya S, Dhanush Gowda, Dhanush K Urs) for HackFest@MLH.
 - **License:** [MIT License](LICENSE) — Copyright (c) 2026 Apprentice Contributors.
+=======
+# kindbot
+>>>>>>> 479d6a9d73140ceb0cce0f208a06bb9f4bc35f29

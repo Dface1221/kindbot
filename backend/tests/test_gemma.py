@@ -46,3 +46,17 @@ def test_generate_json_mocked_malformed_json(monkeypatch):
 
         with pytest.raises(RuntimeError, match="malformed JSON"):
             generate_json("Test prompt")
+
+def test_generate_json_mocked_list_wrapped(monkeypatch):
+    monkeypatch.setenv("GEMINI_API_KEY", "test-mock-key")
+    mock_response = MagicMock()
+    mock_response.text = '[{"title": "List Wrapped Skill", "purpose": "Testing list unwrap", "steps": []}]'
+
+    with patch("google.genai.Client") as mock_client_cls:
+        mock_client = MagicMock()
+        mock_client.models.generate_content.return_value = mock_response
+        mock_client_cls.return_value = mock_client
+
+        data = generate_json("Test prompt")
+        assert data["title"] == "List Wrapped Skill"
+        assert data["purpose"] == "Testing list unwrap"
